@@ -1,0 +1,135 @@
+.section-videos {
+  background: black;
+ 
+  color: $color__white;
+  text-align: center;
+  padding: 1px 0 8vmin;
+  overflow: hidden;
+  position: relative;
+  &::after,
+  &::before {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 60vmin;
+    
+    display: block;
+     background-image: url('../../images/cray2.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    animation: loop 120s infinite linear;
+    content:'';
+    z-index: 0;
+    margin-bottom: -20%;
+     @include media-query($small) {
+      height: 90vmin;
+    }
+     @include media-query($widescreen) {
+      height: 52vmax;
+      margin-bottom: -25%;
+    }
+  }
+  &::after {
+    position: absolute;
+    opacity: 0.15;
+    z-index: 2;
+    animation: loop 70s infinite  linear;
+  }
+  .button {
+    margin: calc(20px + 2vw) auto 20px;
+    i {
+      margin: 0 0.3em 0 0;
+    }
+  }
+}
+
+.swiper-container.videos-wrap {
+  position: relative;
+  z-index: 20;
+}
+
+@keyframes loop {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(-50%)
+  }
+}
+
+.single-video {
+  padding: 4vmin;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  @include media-query($tiny) {
+    width: 70%
+  }
+  background: black;
+  color: $color__white;
+  text-decoration: none;
+  
+  overflow: hidden;
+  .video-background {
+    @extend %psuedo;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .video-content {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 20;
+    color: white;
+    min-height: 40vw;
+      @include media-query($widescreen) {
+          min-height: 29vw;
+        }
+    .h2, .h4 {
+      margin: 0.05em auto;
+    }
+    .h2 {
+      text-transform: uppercase;
+       @include media-query($small) {
+        font-size: 28px;
+      }
+    }
+    .video-header {
+      margin-bottom: 10vw;
+      @include media-query($widescreen) {
+        margin-bottom: 6vw;
+      }
+    }
+  }
+  .video-footer {
+    margin: 10vw auto 0;
+    display: block;
+  }
+}
+.videos-inner {
+  .h2 {
+    margin: 0 auto 0.5em;
+  }
+}
+
+.basicLightbox--visible .basicLightbox__placeholder {
+  width: 100%
+}
+
+.iframe-wrap {
+  width: 94%;
+  margin: auto;
+  padding-bottom: 50%;
+  display: block;
+  
+  height: 0;
+  position: relative;
+  display: block;
+    iframe {
+      @extend %psuedo;
+    }
+}

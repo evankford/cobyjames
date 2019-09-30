@@ -1,4 +1,13 @@
-$font__main: sans-serif;
+@font-face {
+  font-family: "Eurostile Extended";
+  font-weight: 700;
+  font-style: normal;
+  src: url('./../../fonts/EurostileBQ-BoldExtended.woff2') format('woff2'),
+  url('./../../fonts/EurostileBQ-BoldExtended.woff') format('woff');
+}
+
+$font__main: 'proxima-nova', arial, sans-serif;
+$font__heading: "Eurostile Extended" , "Eurostile BQ", 'proxima-nova', arial, sans-serif;;
 $font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", courier, monospace;
 $font__line-height-body: 1.5;

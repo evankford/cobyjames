@@ -67,6 +67,12 @@
   },
   "keywords": [],
   "dependencies": {
-    "@wpackio/entrypoint": "^3.5.0"
+    "@wpackio/entrypoint": "^3.5.0",
+    "aos": "^3.0.0-beta.6",
+    "basiclightbox": "^5.0.2",
+    "lazysizes": "^5.1.1",
+    "parallax-js": "^3.1.0",
+    "swiper": "^5.0.3",
+    "underscore": "^1.9.1"
   }
 }

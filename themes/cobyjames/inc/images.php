@@ -27,12 +27,13 @@ add_image_size('1200w', 1200);
 add_image_size('1500w', 1500);
 add_image_size('1800w', 1800);
 add_image_size('2100w', 2100);
-add_image_size('2400w', 2100);
+add_image_size('2400w', 2400);
+add_image_size('3000w', 3000);
 
 function get_imgset($id, $max=false) {
 	$toreturn = '';
 	
-	$sizes = array('300w', '450w' , '600w', '750w', '900w', '1200w', '1500w', '1800w', '2100w', '2400w');
+	$sizes = array('300w', '450w' , '600w', '750w', '900w', '1200w', '1500w', '1800w', '2100w', '2400w', '3000w');
 
 	$i = 0;
 	
@@ -134,8 +135,8 @@ function vidimg($imageid, $mp4src= false, $webmsrc = false, $isbg = false, $maxs
 	if ($mp4src) :?>
 	<div class="bgvideo-wrap loading">
 		<video poster="<?php echo wp_get_attachment_image_src($imageid, '1200w', false)[0];?>" playsinline muted autoplay loop>
-				<source src="<?php echo $webmsrc;?>" type="video/webm">
-				<source src="<?php echo $mp4src;?>" type="video/mp4">
+			<source data-src="<?php echo $webmsrc['url'];?>" type="video/webm">
+			<source data-src="<?php echo $mp4src['url'];?>" type="video/mp4">
 		</video>
 	</div>
 	<script>

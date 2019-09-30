@@ -1,0 +1,55 @@
+%button {
+  line-height: 1.1;
+  padding: 0.6em 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $font__heading;
+  transition: transform 300ms $ease, opacity 300ms $ease;
+  position: relative;
+  display: inline-block;
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+  }
+  &.arrow-after {
+    &::after {
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      font-size: 0.9em;
+      font-weight: 400;
+      padding: 0 0 0 0.5em;
+      content: '\f35a';
+      transition: transform 300ms $ease;
+    }
+    &:hover::after {
+      transform: translateX(-3px);
+    }
+  }
+  &.small {
+    font-size: 0.85em;
+  }
+  &.big {
+    font-size: 1.25em;
+    letter-spacing: 0.2em;
+  }
+  &.gold {
+    color: $color__white;
+    background: $color__gold;
+  }
+}
+
+.button, button {
+  @extend %button;
+}
+
+a.button {
+  text-decoration: none;
+  color: inherit;
+  &:visited, &:active, &:focus {
+    color: inherit;
+    opacity: 0.8;
+  }
+  &:hover {
+    color: inherit;
+  }
+}

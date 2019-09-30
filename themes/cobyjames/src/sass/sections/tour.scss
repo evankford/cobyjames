@@ -1,0 +1,122 @@
+.section-tour {
+  background: url('../../images/cardboard-black.jpg');
+  color: $color__white;
+  text-align: center;
+}
+.bit-show {
+  background:  url('../../images/cardboard-black.jpg');
+}
+
+.tour-outer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5vmin;
+  
+}
+
+.tour-image__wrap {
+  flex: 2 1 300px;
+  padding: 47px;
+  z-index: 1;
+  position: relative;
+  @include media-query($medium-up) {
+    padding: 52px;
+    position: sticky;
+    top: calc(40px + 1vw);
+    margin-left: calc(-75px + 2vw);
+    margin-top: calc(-75px + 2vw);
+    margin-bottom: calc(25px + 2vw);
+    margin-right: calc(-200px + 10vw);
+    // margin: -50px 40px -10px -100px;
+  }
+  @include media-query($large) {
+    padding: 62px;
+  }
+  @include media-query($widescreen) {
+    padding: 75px;
+    margin: 50px;
+  }
+}
+
+.tour-outer-image {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 92%;
+  height: 92%;
+  svg {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    animation: rotate 45s linear infinite;
+    
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  } 100% {
+    transform: rotate(-360deg)
+  }
+}
+.tour-inner-image {
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 1000px;
+  position: relative;
+  
+  .respimg-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tour-dates__wrap {
+  flex: 2 1 400px;
+  // width: 95%;
+  position: relative;
+  @include media-query($medium-up) {
+    margin-top: 24vw;
+  }
+  z-index: 2;
+  .bit-wrapper {
+    width: 100%;
+    max-width: 690px;
+    margin: auto;
+    padding: 0 32px;
+    &.bit-extra {
+      max-height: 0;
+      overflow-y: hidden;
+      transition: max-height 500ms $ease;
+    }
+  }
+  .gold.button {
+    margin:30px auto 30px;
+    cursor: pointer;
+  }
+}
+
+.tour-dates__header {
+  text-align: center;
+  padding:0  4vmin;
+  margin: calc(10px + 2vmax) auto;
+  .h3 {
+    opacity: 1;
+    color: $color__gold;
+  }
+  .h5.light {
+    // text-transform: lowercase;
+    // letter-spacing: -0.01em;
+    margin: 0;
+  }
+}

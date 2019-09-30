@@ -5,4 +5,42 @@ h4,
 h5,
 h6 {
 	clear: both;
+	margin: 0.4em 0 0.2em;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.1;
+
+	&.subtle-header, &.subtle {
+		text-transform: uppercase;
+		opacity: 0.5;
+		letter-spacing: 0.2em;
+	}
+	&.light {
+		font-weight: 100;
+		font-family: $font__main;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		// -webkit-font-smoothing: antialiased;
+		opacity: 0.8;
+	}
+}
+.h1,.h2,.h3,.h4 {
+	font-family: $font__heading;
+}
+.h1 {
+	font-size: calc(35px + 7vw);
+}
+.h2 {
+	font-size: calc(29px + 2.5vw);
+}
+.h3 {
+	font-size: calc(20px + 1.3vw);
+}
+.h4 {
+	font-size: calc(16px + 0.6vw);
+}
+.h6 {
+	font-size: 0.9em;
 }

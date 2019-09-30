@@ -14,7 +14,7 @@ class themeInit {
 	
 	public function __construct() {
 		$this->enqueue = new \WPackio\Enqueue(
-			'{%= name %}',
+			'cobyjames',
 			'dist',
 			'1.0.0',
 			'theme',
@@ -147,6 +147,7 @@ $cssFileURI = get_template_directory_uri() . '/css/build/' . basename($cssFilePa
 wp_enqueue_style( 'site_main_css', $cssFileURI );
 
 	wp_enqueue_style('fontAwesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+	wp_enqueue_style('typekit', 'https://use.typekit.net/zzd2crv.css');
 
 	$jsFilePath = glob( get_template_directory() . '/js/frontend/main.*.js' );
 	$jsFileURI = get_template_directory_uri() . '/js/frontend/' . basename($jsFilePath[0]);
@@ -212,3 +213,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+require get_template_directory() . '/inc/post-types.php';

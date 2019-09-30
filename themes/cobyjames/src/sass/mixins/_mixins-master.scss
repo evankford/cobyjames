@@ -27,3 +27,24 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns);
 }
+
+
+$ease: cubic-bezier(.58,.26,.43,.83);
+
+%psuedo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  content:'';
+  display: block;
+}
+
+%hover {
+  transition: transform 300ms $ease;
+      &:hover {
+        transform: translateY(-2px)
+      }
+}

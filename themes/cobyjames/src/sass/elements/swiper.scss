@@ -1,0 +1,27 @@
+
+
+.swiper-container {
+  .swiper-button-prev, .swiper-button-next {
+    opacity: 0.5;
+  
+    &:after {
+      display: none;
+    }
+    i {
+      color: white;
+      font-size: 65px;
+    }
+  }
+  & > .swiper-pagination {
+    margin: 5vmin auto 0;
+    &.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+      position: relative;
+    bottom: -10%;
+    left: 0;
+    transform: none;
+    }
+  }
+  .swiper-pagination-bullet {
+    background: white;
+  }
+}

@@ -23,14 +23,24 @@
     }
 }
 
+.vidimg-outer {
+    @extend %psuedo;
+}
+
+
 .bgvideo-wrap {
-    position: absolute;
+   @extend %psuedo;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 2000;
     overflow: hidden;
+    opacity: 0;
+    transition: opacity 800ms ease;
+    &.loaded {
+        opacity: 1;
+    }
     video {
         position: absolute;
         top: 50%;
