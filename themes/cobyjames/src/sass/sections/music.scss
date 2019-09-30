@@ -72,7 +72,7 @@
     padding: 0.14em;
     backface-visibility: hidden;
     border: 1px solid transparent;
-    color: $color__brown-dark;
+    color: $color__brown-dark !important;
     transform: scale(0.95);
     &:hover {
       opacity: 1;
