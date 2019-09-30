@@ -161,18 +161,18 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start ;
   flex-wrap: wrap;
   
+  & > label.bit-label {
+    font-size: calc(12px + 1vw);
+    text-align: left;
+    line-height: 1;
+    font-weight: 200;
+    font-family: $font__main;
+  }
   .mc-group {
     flex: 1 1 120px;
-    label {
-      font-size: calc(12px + 1vw);
-      text-align: left;
-      line-height: 1;
-      font-weight: 200;
-      font-family: $font__main;
-    }
     &.input-wrap {
       max-width: 240px;
       input#mce-EMAIL {
@@ -196,7 +196,7 @@
     }
   }
   button.button {
-    background: transparent;
+    background: transparent !important;
     color: white;
     padding: 4px 12px;
     font-size: 16px;

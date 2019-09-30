@@ -59,11 +59,11 @@
         <div class="tour-mc"><link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
           <style type="text/css">#mc_embed_signup{background:transparent; clear:left;  width:100%;}</style>
           <div id="mc_embed_signup">
-            <form action="https://laurendaigle.us7.list-manage.com/subscribe/post?u=7e27c8f8d7069d7722d689068&amp;id=2469f52d67" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <form action="https://centricitymusic.us7.list-manage.com/subscribe/post?u=7e27c8f8d7069d7722d689068&amp;id=219c4c8f73" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
               <div id="mc_embed_signup_scroll">
+                <label class="bit-label" for="mce-EMAIL"><?php the_field('email_header');?></label>
                <div class="mc-group input-wrap">
                  
-                 <label class="bit-label" for="mce-EMAIL"><?php the_field('email_header');?></label>
                   <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
                </div>
                <div class="mc-group button-wrap">
