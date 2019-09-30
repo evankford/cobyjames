@@ -35,6 +35,9 @@
       border-radius: 10000px;
       overflow: hidden;
       color: $color__white;
+      &:visited {
+        color: $color__white;
+      }
       font-weight: normal;
       flex:0 0 240px;
       height: 240px;
