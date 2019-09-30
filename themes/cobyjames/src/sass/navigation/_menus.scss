@@ -6,22 +6,23 @@
 	ul {
 		margin-bottom: 20px;
 		padding: 20px 0;
+		li {
+			
+			position: relative;
+	
+			// &:hover > a,
+			// &.focus > a {
+			// }
+			display: block;
+			float: none;
+		}
 		
 	}
 	.respimg-wrap {
 		width: 120px;
+		
 	}
 	
-	li {
-		
-		position: relative;
-
-		// &:hover > a,
-		// &.focus > a {
-		// }
-		display: block;
-		float: none;
-	}
 
 	a {
 		display: inline-block;
