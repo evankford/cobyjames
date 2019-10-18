@@ -1,13 +1,17 @@
 {
-  "main.js": "customizer/main.js",
-  "runtime.js": "customizer/runtime.js",
-  "vendors~main.js": "customizer/vendors~main.js",
+  "main.js": "customizer/main-ca83d0e1.js",
+  "main.js.map": "customizer/main-ca83d0e1.js.map",
+  "runtime.js": "customizer/runtime-25d4afd6.js",
+  "runtime.js.map": "customizer/runtime-25d4afd6.js.map",
   "wpackioEp": {
     "main": {
       "js": [
-        "customizer/runtime.js",
-        "customizer/vendors~main.js",
-        "customizer/main.js"
+        "customizer/runtime-25d4afd6.js",
+        "customizer/main-ca83d0e1.js"
+      ],
+      "js.map": [
+        "customizer/runtime-25d4afd6.js.map",
+        "customizer/main-ca83d0e1.js.map"
       ]
     }
   }
