@@ -62,7 +62,7 @@
     word-break: break-all;
     letter-spacing: -0.04em
   }
-  a {
+  a.release-link {
     font-size: calc(40px + 3vw);
     transition: opacity 300ms $ease, transform 300ms $ease;
     opacity: 0.85;
@@ -77,6 +77,13 @@
     &:hover {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+  a.button {
+    margin-top: 20px;
+    opacity: 0.7;
+    &:hover {
+      opacity: 0.9;
     }
   }
   p {

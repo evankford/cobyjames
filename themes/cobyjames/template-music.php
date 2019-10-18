@@ -54,6 +54,9 @@
               <?php if ($release['more_text']) {
                 echo '<p class="more-text">' . $release['more_text'] .'</p>';
               }?>
+              <?php if ($release['button_text'] && $release['button_url']) {
+                echo '<a class="button dark" target="_blank" rel="nofollow" href="' . $release['button_url'] . '">' . $release['button_text'] .'</a>';
+              }?>
             </div>
           </div>
         </div>

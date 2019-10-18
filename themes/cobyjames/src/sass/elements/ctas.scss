@@ -36,6 +36,10 @@
     color: $color__white;
     background: $color__gold;
   }
+  &.dark {
+    color: $color__white;
+    background: $color__brown-dark;
+  }
 }
 
 .button, button {
