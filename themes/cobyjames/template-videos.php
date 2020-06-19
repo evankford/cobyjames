@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Videos Section
- * 
+ *
  *  Template Post Type: post, section, page
  *
  *
@@ -15,8 +15,8 @@
 <section class="front-section section-videos" id="video">
     <div class="videos-inner">
     <h2 class="h2 subtle"><?php the_field('header_text');?></h2>
-    
-    <?php 
+
+    <?php
     $videos = get_field('videos');
     $is_slider = false;
     if (count($videos) > 1) {
@@ -27,17 +27,17 @@
         $arrows = 'false';
         if (get_field('slider_dots') > 0) {
           $dots = 'true';
-        } 
+        }
         if (get_field('slider_arrows') > 0) {
           $arrows = 'true';
-        } 
+        }
         echo '<div class="swiper-container videos-wrap" data-module="swiper" data-swiper-type="video" data-swiper-arrows="' . $arrows . '" data-swiper-pagination="' . $dots .'">';
       } else {
         echo '<div class="swiper-container videos-wrap">';
       }
       echo '<div class="swiper-wrapper">';
       foreach ($videos as $video) {?>
-       <a data-module="lightbox" data-lightbox-type="video" target="_blank" rel="nofollow" class="swiper-slide single-video" href="<?php echo $video['url'];?>">
+       <a  target="_blank" rel="nofollow" class="swiper-slide single-video" href="<?php echo $video['url'];?>">
           <div class="video-inner">
             <div class="video-background">
               <?php vidimg($video['fallback_image']['id'], $video['mp4'], $video['webm'], true, '1500w');?>
@@ -54,7 +54,7 @@
           </div>
         </a>
       <?php }
-      
+
       echo '</div>';
       if ($is_slider) {
         echo '<div class="swiper-pagination"></div>
@@ -63,7 +63,7 @@
         echo '</div>';
       }
       ?>
-    <?php 
+    <?php
     if (get_field('more_button_text') && get_field('more_button_url')) {
       echo '<p class="button-wrap"><a href="' . get_field('more_button_url') . '" class="button gold big"><i class="fab fa-youtube"></i>' .  get_field('more_button_text') . '</a>';
     }?>

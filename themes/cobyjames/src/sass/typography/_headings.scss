@@ -31,15 +31,27 @@ h6 {
 }
 .h1 {
 	font-size: calc(35px + 7vw);
+	@include media-query($widescreen) {
+		font-size: 85px;
+	}
 }
 .h2 {
 	font-size: calc(29px + 2.5vw);
+	@include media-query($widescreen) {
+		font-size: 55px;
+	}
 }
 .h3 {
 	font-size: calc(20px + 1.3vw);
+	@include media-query($widescreen) {
+		font-size: 36px;
+	}
 }
 .h4 {
 	font-size: calc(16px + 0.6vw);
+	@include media-query($widescreen) {
+		font-size: 24px;
+	}
 }
 .h6 {
 	font-size: 0.9em;

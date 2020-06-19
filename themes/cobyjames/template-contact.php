@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Contact Section
- * 
+ *
  *  Template Post Type: post, section, page
  *
  *
@@ -15,16 +15,16 @@
 <section class="front-section section-contacts" id="contact">
     <div class="contact-inner">
     <h2 class="h1 subtle"><?php the_field('header_text');?></h2>
-    
-    <?php 
+
+    <?php
     $contacts = get_field('contacts');
     ?>
-    
+
     <div class="contacts__wrap">
       <?php foreach ($contacts as $contact) {?>
        <a target="_blank" rel="nofollow" data-contact-color="<?php echo $contact['color'];?>" class="contact-link" href="<?php echo $contact['url'];?>">
         <h3 class="contact-title h3"><?php echo $contact['title'];?></h3>
-          
+
           <div class="contact-inner">
             <h4 class="h4 black"><?php echo $contact['name'];?></h4>
             <?php if ($contact['at'] != ''){?>
@@ -35,6 +35,17 @@
       </a>
       <?php }?>
     </div>
-    
+
   </div><!-- /.contacts-inner -->
+  <?php if (get_field('about')) {?>
+    <div class="about-content">
+      <div class="about-inner">
+
+        <h2 class="h1 subtle"><?php the_field('about_header');?></h2>
+        <div class="rte">
+          <?php the_field('about');?>
+        </div>
+      </div>
+    </div>
+    <?php } ?>
 </section>

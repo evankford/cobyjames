@@ -40,6 +40,10 @@
     color: $color__white;
     background: $color__brown-dark;
   }
+  &.light {
+    background: $color__white;
+    color: $color__brown-dark;
+  }
 }
 
 .button, button {

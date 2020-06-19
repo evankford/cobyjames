@@ -1,17 +1,17 @@
 {
-  "main.js": "customizer/main-ca83d0e1.js",
-  "main.js.map": "customizer/main-ca83d0e1.js.map",
-  "runtime.js": "customizer/runtime-25d4afd6.js",
-  "runtime.js.map": "customizer/runtime-25d4afd6.js.map",
+  "main.js": "customizer/main-0e2c2352.js",
+  "main.js.map": "customizer/main-0e2c2352.js.map",
+  "runtime.js": "customizer/runtime-328d84dd.js",
+  "runtime.js.map": "customizer/runtime-328d84dd.js.map",
   "wpackioEp": {
     "main": {
       "js": [
-        "customizer/runtime-25d4afd6.js",
-        "customizer/main-ca83d0e1.js"
+        "customizer/runtime-328d84dd.js",
+        "customizer/main-0e2c2352.js"
       ],
       "js.map": [
-        "customizer/runtime-25d4afd6.js.map",
-        "customizer/main-ca83d0e1.js.map"
+        "customizer/runtime-328d84dd.js.map",
+        "customizer/main-0e2c2352.js.map"
       ]
     }
   }

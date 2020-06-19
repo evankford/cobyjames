@@ -16,13 +16,13 @@
   .release-inner {
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0 5vmin;
     max-width: 1200px;
     margin: auto;
   }
-  
+
 }
 
 .release-image__wrap {
@@ -42,7 +42,7 @@
     top: 5%;
     background: rgba(lighten($color__gold, 10%), 0.6);
     z-index: 1;
-    
+
   }
   .respimg-wrap {
     position: relative;
@@ -59,7 +59,7 @@
   .h2 {
     text-transform: uppercase;
     line-height: 0.9;
-    word-break: break-all;
+    word-break: break-word;
     letter-spacing: -0.04em
   }
   a.release-link {
@@ -74,6 +74,10 @@
     border: 1px solid transparent;
     color: $color__brown-dark !important;
     transform: scale(0.95);
+
+    @include media-query($widescreen) {
+      font-size: 85px;
+    }
     &:hover {
       opacity: 1;
       transform: scale(1);

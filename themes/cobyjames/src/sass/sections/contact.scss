@@ -1,3 +1,7 @@
+.contact-inner {
+  width: 100%;
+}
+
 .section-contacts {
   background: url('../../images/cardboard-creme.jpg');
   padding :5vmin;
@@ -6,6 +10,7 @@
   min-height: 75vmin;
   align-items: center;
   justify-content: center;
+  flex-direction: column;;
   .h1 {
     margin: 5vmin 0 -0.8em;
     position: relative;
@@ -15,7 +20,15 @@
       font-size: 30px;
       margin: 10vmin 0;
     }
-    
+
+  }
+}
+
+.about-content  {
+  max-width: $grid-large;
+  margin: auto;
+  .rte {
+    text-align: left;
   }
 }
 
@@ -53,7 +66,7 @@
       }
       &:hover {
         transform: scale(1.05);
-        
+
       }
       @include media-query($widescreen) {
         flex: 0 0 300px;
@@ -141,7 +154,7 @@
      .h4 {
         color: $color__brown-dark;
         letter-spacing: -0.08em;
-        
+
       }
     }
-  } 
+  }
