@@ -3,7 +3,7 @@
 }
 
 .section-contacts {
-  background: url('../../images/cardboard-creme.jpg');
+  background: url('../../images/cardboard_simple.jpg');
   padding :5vmin;
   text-align: center;
   display: flex;
@@ -60,7 +60,7 @@
         z-index: 1;
         &::before {
           @extend %psuedo;
-          background: url('../../images/cardboard-gray.jpg');
+          background: url('../../images/cardboard_simple.jpg');
           mix-blend-mode: multiply;
         }
       }
@@ -104,7 +104,7 @@
       position: relative;
       box-sizing: border-box;
       text-decoration: none;
-      background: $color__gold;
+      background: $color__pink;
       &[data-contact-color=blue] {
         background: $color__slate;
       }

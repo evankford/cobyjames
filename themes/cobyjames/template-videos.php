@@ -65,7 +65,7 @@
       ?>
     <?php
     if (get_field('more_button_text') && get_field('more_button_url')) {
-      echo '<p class="button-wrap"><a href="' . get_field('more_button_url') . '" class="button gold big"><i class="fab fa-youtube"></i>' .  get_field('more_button_text') . '</a>';
+      echo '<p class="button-wrap"><a href="' . get_field('more_button_url') . '" class="button pink big"><i class="fab fa-youtube"></i>' .  get_field('more_button_text') . '</a>';
     }?>
   </div><!-- /.videos-inner -->
 </section>

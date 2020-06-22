@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Tour Section
- * 
+ *
  *  Template Post Type: post, section, page
  *
  *
@@ -14,7 +14,7 @@
     <div class="tour-outer">
       <h2 class="hide-me">Tour Dates</h2>
       <div class="tour-image__wrap">
-        <?php 
+        <?php
           echo '<div class="tour-inner-image">';
           imgwrap(get_field('tour_header')['id'], true, '1200w');
           echo '</div><div class="tour-outer-image">';
@@ -27,11 +27,11 @@
               echo '<div class="tour-dates__header">';
                 if (get_field('tour_dates_header')) {
                   echo '<h3 class="subtle-header h3">' . get_field('tour_dates_header') . '</h3>';
-                  
+
                 }?>
                 <?php if (get_field('above_dates_subtext')) {
                   echo '<h4 class="light h5">' . get_field('above_dates_subtext') . '</h4>';
-                  
+
                 }
               echo '</div>';
             }
@@ -52,7 +52,7 @@
             <div class="fallback hidden h3"  aria-hidden>More Dates Coming Soon
             </div>
               <div class="error hidden">Error Loading Dates</div>
-            <div class="tour-dates-expand big hidden button accent gold" data-expand-bit><?php the_field('dates_expander');?></div>
+            <div class="tour-dates-expand big hidden button accent blue" data-expand-bit><?php the_field('dates_expander');?></div>
           </div>
         </div>
     </div>

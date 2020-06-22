@@ -36,13 +36,17 @@
     color: $color__white;
     background: $color__gold;
   }
+  &.pink {
+    color: $color__white;
+    background: $color__pink;
+  }
   &.dark {
     color: $color__white;
-    background: $color__brown-dark;
+    background: $color__blue-dark;
   }
   &.light {
     background: $color__white;
-    color: $color__brown-dark;
+    color: $color__blue-dark;
   }
 }
 

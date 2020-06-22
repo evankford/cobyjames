@@ -1,10 +1,10 @@
 .section-tour {
-  background: url('../../images/cardboard-black.jpg');
+  background: url('../../images/cardboard_blue.jpg');
   color: $color__white;
   text-align: center;
 }
 .bit-show {
-  background:  url('../../images/cardboard-black.jpg');
+  background:  url('../../images/cardboard_blue.jpg');
 }
 
 .tour-outer {
@@ -90,6 +90,7 @@
   }
   @include media-query($widescreen) {
     margin-top: 300px;
+    margin-bottom: 50px;
   }
   z-index: 2;
   .bit-wrapper {
@@ -115,7 +116,7 @@
   margin: calc(10px + 2vmax) auto;
   .h3 {
     opacity: 1;
-    color: $color__gold;
+    color: $color__pink;
   }
   .h5.light {
     // text-transform: lowercase;

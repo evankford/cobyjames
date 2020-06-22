@@ -1,11 +1,11 @@
 .section-music {
-  background: url('../../images/cardboard-gold.jpg');
+  background: url('../../images/cardboard_pink.jpg');
   color: $color__white;
   text-align: center;
   padding: 1px 0 8vmin;
   overflow: hidden;
   .h1.subtle {
-    color: $color__gold;
+    color: $color__blue;
     opacity: 0.73;
     margin: -0.25em 0 30px;
     line-height: 1;
@@ -31,7 +31,7 @@
   position: relative;
   &::before, &::after {
     @extend %psuedo;
-    background: rgba(darken($color__gold, 20%), 0.4);
+    background: rgba(darken($color__blue, 20%), 0.4);
     z-index: 0;
     border-radius: 10000px;
   }
@@ -40,7 +40,7 @@
     height: 90%;
     left: 5%;
     top: 5%;
-    background: rgba(lighten($color__gold, 10%), 0.6);
+    background: rgba(lighten($color__blue, 10%), 0.6);
     z-index: 1;
 
   }

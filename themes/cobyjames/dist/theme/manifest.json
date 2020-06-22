@@ -1,16 +1,15 @@
 {
-  "main.css": "theme/main-8882b5ae.css",
-  "main.css.map": "theme/main-8882b5ae.css.map",
+  "main.css": "theme/main-b0b2d0a4.css",
+  "main.css.map": "theme/main-b0b2d0a4.css.map",
   "main.js": "theme/main-81d6a899.js",
   "main.js.map": "theme/main-81d6a899.js.map",
   "runtime.js": "theme/runtime-707dfba3.js",
   "runtime.js.map": "theme/runtime-707dfba3.js.map",
   "theme/assets/EurostileBQ-BoldExtended.woff": "theme/assets/EurostileBQ-BoldExtended-7caf2a16.woff",
   "theme/assets/EurostileBQ-BoldExtended.woff2": "theme/assets/EurostileBQ-BoldExtended-d57a61d9.woff2",
-  "theme/assets/cardboard-black.jpg": "theme/assets/cardboard-black-9978c242.jpg",
-  "theme/assets/cardboard-creme.jpg": "theme/assets/cardboard-creme-a5f8841e.jpg",
-  "theme/assets/cardboard-gold.jpg": "theme/assets/cardboard-gold-3e4d1086.jpg",
-  "theme/assets/cardboard-gray.jpg": "theme/assets/cardboard-gray-0636178c.jpg",
+  "theme/assets/cardboard_blue.jpg": "theme/assets/cardboard_blue-8b6cafa3.jpg",
+  "theme/assets/cardboard_pink.jpg": "theme/assets/cardboard_pink-cc8e2e98.jpg",
+  "theme/assets/cardboard_simple.jpg": "theme/assets/cardboard_simple-99b3cc4b.jpg",
   "theme/assets/cray2.jpg": "theme/assets/cray2-daa02062.jpg",
   "vendors~main.css": "theme/vendors~main-987f503d.css",
   "vendors~main.css.map": "theme/vendors~main-987f503d.css.map",
@@ -30,11 +29,11 @@
       ],
       "css": [
         "theme/vendors~main-987f503d.css",
-        "theme/main-8882b5ae.css"
+        "theme/main-b0b2d0a4.css"
       ],
       "css.map": [
         "theme/vendors~main-987f503d.css.map",
-        "theme/main-8882b5ae.css.map"
+        "theme/main-b0b2d0a4.css.map"
       ]
     }
   }
