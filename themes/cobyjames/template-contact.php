@@ -23,9 +23,9 @@
     <div class="contacts__wrap">
       <?php foreach ($contacts as $contact) {?>
        <a target="_blank" rel="nofollow" data-contact-color="<?php echo $contact['color'];?>" class="contact-link" href="<?php echo $contact['url'];?>">
-        <h3 class="contact-title h3"><?php echo $contact['title'];?></h3>
 
-          <div class="contact-inner">
+       <div class="contact-inner">
+          <h3 class="contact-title h3"><?php echo $contact['title'];?></h3>
             <h4 class="h4 black"><?php echo $contact['name'];?></h4>
             <?php if ($contact['at'] != ''){?>
               <p class="bold strong"><?php echo $contact['at'];?></p>

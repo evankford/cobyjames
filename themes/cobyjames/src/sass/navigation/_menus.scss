@@ -1,28 +1,28 @@
 .main-navigation {
 	clear: both;
 	display: block;
-	
+
 	width: 100%;
 	ul {
 		margin-bottom: 20px;
 		padding: 20px 0;
 		li {
-			
+
 			position: relative;
-	
+
 			// &:hover > a,
 			// &.focus > a {
 			// }
 			display: block;
 			float: none;
 		}
-		
+
 	}
 	.respimg-wrap {
 		width: 120px;
-		
+
 	}
-	
+
 
 	a {
 		display: inline-block;
@@ -40,14 +40,14 @@
 			color: $color__white;
 		}
 		&:hover {
-			
+
 			color: transparent;
 			-webkit-text-stroke: 2px $color__white;
 			@include media-query($small) {
 				-webkit-text-stroke: 1px $color__white;
 			}
 		}
-		
+
 	}
 
 
@@ -57,50 +57,9 @@
 		margin: 0;
 		padding-left: 0;
 
-	
 
-	
+
+
 	}
 
-	
-	.main-menu-container {
-		display: block;
-	}
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: block;
-	}
-
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-		overflow: hidden;
-	}
-
-	.nav-previous {
-		
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
 }

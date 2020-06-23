@@ -87,7 +87,7 @@
     color: white;
     min-height: 40vw;
       @include media-query($widescreen) {
-          min-height: 29vw;
+          min-height: 350px;
         }
     .h2, .h4 {
       margin: 0.05em auto;
