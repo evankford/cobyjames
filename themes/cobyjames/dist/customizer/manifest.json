@@ -1,0 +1,18 @@
+{
+  "main.js": "customizer/main-0e2c2352.js",
+  "main.js.map": "customizer/main-0e2c2352.js.map",
+  "runtime.js": "customizer/runtime-328d84dd.js",
+  "runtime.js.map": "customizer/runtime-328d84dd.js.map",
+  "wpackioEp": {
+    "main": {
+      "js": [
+        "customizer/runtime-328d84dd.js",
+        "customizer/main-0e2c2352.js"
+      ],
+      "js.map": [
+        "customizer/runtime-328d84dd.js.map",
+        "customizer/main-0e2c2352.js.map"
+      ]
+    }
+  }
+}
