@@ -136,5 +136,9 @@
   }
   a {
     color: white;
+    &:visited {
+      color: white;
+      opacity: 0.9;
+    }
   }
 }
