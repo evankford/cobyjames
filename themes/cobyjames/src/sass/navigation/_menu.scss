@@ -11,9 +11,7 @@
 			padding: 0;
 		}
 		li {
-
 			position: relative;
-
 			// &:hover > a,
 			// &.focus > a {
 			// }
@@ -24,10 +22,7 @@
 	}
 	.respimg-wrap {
 		width: 120px;
-
 	}
-
-
 	a {
 		display: inline-block;
 		text-decoration: none;
@@ -56,13 +51,10 @@
 
 
 	ul {
-		// display: none;
+		display: block;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
-
-
 	}
 
 }

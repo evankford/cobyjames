@@ -1,14 +1,7 @@
 .section-intro {
   width: 100%;
   min-height: 90vmin;
-  @media (min-width: 1000px) and (max-height: 700px) {
-    min-height: 700px;
-  }
-  @include media-query($tiny) {
-   height: 80vmax;
-    max-height: 500px;
-  }
-  height: auto;
+   height: auto;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -16,19 +9,34 @@
   padding: 7vmin;
   align-items: flex-end;
   justify-content: space-between;
+  @media (min-width: 1000px) and (max-height: 700px) {
+    min-height: 700px;
+  }
+  @include media-query($tiny) {
+   padding: 20px;
+  }
+
   nav.main-navigation {
     flex: 0 1 500px;
     position: relative;
     z-index: 20;
+    display: block;
+    @include media-query($tiny) {
+       margin-top: calc(90px + 6vw);
+    }
+
     .respimg-wrap {
       width: 50%;
       max-width: 180px;
       padding-bottom:  40px !important;
       @include media-query($tiny) {
         max-width: 130px;
+
       }
       min-width: 80px;
       width: 100%;
+
+
     }
   }
   .email-signup {
@@ -38,10 +46,10 @@
    @include media-query($tiny) {
     flex-wrap: wrap;
     align-items: flex-end;
-    nav.main-navigation {
-      margin: 50px auto -60px;
-    }
+
     .email-signup {
+      position: relative;
+      margin-top: 20px;
       height: auto;
       padding: 0 8px;
     }
@@ -49,7 +57,7 @@
   .button-wrap {
     position: absolute;
     lefT: 0;
-    top: 140px;
+    top: calc(60px + 5vw);
     @media (min-width: 900px) {
       bottom: 10%;
       top: unset;
@@ -79,6 +87,10 @@
 
     .bg {
       animation: subtle2 100ms linear ease;
+
+      img {
+        object-position: 35% 50%;
+      }
     }
   }
   .coby {

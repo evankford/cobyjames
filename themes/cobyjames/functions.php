@@ -11,7 +11,7 @@
 require_once __DIR__ . '/vendor/autoload.php';
 class themeInit {
 	public $enqueue;
-	
+
 	public function __construct() {
 		$this->enqueue = new \WPackio\Enqueue(
 			'cobyjames',
@@ -32,7 +32,7 @@ class themeInit {
 }
 
 new themeInit();
- 
+
 if ( ! function_exists( 'cobyjames_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -142,7 +142,7 @@ add_action( 'widgets_init', 'cobyjames_widgets_init' );
  */
 function cobyjames_scripts() {
 	$cssFilePath = glob( get_template_directory() . '/css/build/style.*.css' );
-$cssFileURI = get_template_directory_uri() . '/css/build/' . basename($cssFilePath[0]);
+	$cssFileURI = get_template_directory_uri() . '/css/build/' . basename($cssFilePath[0]);
 
 wp_enqueue_style( 'site_main_css', $cssFileURI );
 
