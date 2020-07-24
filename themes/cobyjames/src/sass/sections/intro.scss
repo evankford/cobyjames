@@ -24,7 +24,9 @@
     @include media-query($tiny) {
        margin-top: calc(90px + 6vw);
     }
-
+    ul {
+      display: block;
+    }
     .respimg-wrap {
       width: 50%;
       max-width: 180px;
