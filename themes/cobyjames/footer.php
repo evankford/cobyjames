@@ -28,22 +28,22 @@
 			<?php }?>
 			<?php if (get_theme_mod('cobyjames_footer_socials') != false) {?>
 			<div class="footer-socials socials-wrap">
-				<?php get_template_part('template-parts/socials.php');?>
+				<?php get_template_part('template-parts/socials');?>
 			</div>
 			<?php }?>
 			<div class="footer-text">
-				<?php 
+				<?php
 					$year =  date('Y');
 				if (get_theme_mod('cobyjames_footer_text') != '') {
 
 					echo '<p>&copy; ' .  $year . ' ' . get_theme_mod('cobyjames_footer_text');
-				} 
+				}
 				if (get_theme_mod('cobyjames_footer_text') != '') {
 					echo '<p class="ekf-link">an <a href="http://evankerrickford.com" rel="nofollow" target="_blank">evankerrickford.com</a> site.';
-				} 
+				}
 				?>
 			</div>
-		
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

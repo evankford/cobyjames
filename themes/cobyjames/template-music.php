@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Music Section
- * 
+ *
  *  Template Post Type: post, section, page
  *
  *
@@ -15,8 +15,8 @@
 <section class="front-section section-music" id="music">
     <div class="music-inner">
     <h2 class="h1 subtle">Music</h2>
-    
-    <?php 
+
+    <?php
     $releases = get_field('releases');
     $is_slider = false;
     if (count($releases)> 1) {
@@ -28,11 +28,11 @@
         $settings = get_field('slider-settings');
         if ($settings['slider_dots'] > 0) {
           $dots = 'true';
-        } 
+        }
         if ($settings['slider_arrows'] > 0) {
           $arrows = 'true';
-        } 
-        
+        }
+
         echo '<div class="swiper-container" data-module="swiper" data-swiper-type="music" data-swiper-arrows="' . $arrows . '" data-swiper-pagination="' . $dots .'">';
       } else {
         echo '<div class="swiper-container music-slider">';
@@ -61,7 +61,7 @@
           </div>
         </div>
       <?php }
-      
+
       echo '</div>';
       if ($is_slider) {
         echo '<div class="swiper-pagination"></div>
@@ -71,5 +71,5 @@
       echo '</div>';
       ?>
     </div><!--/swiper-container-->
-     
+
 </section>

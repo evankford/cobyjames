@@ -87,7 +87,7 @@
   // width: 95%;
   position: relative;
   @include media-query($medium-up) {
-    margin-top: 24vw;
+    margin-top: 20vw;
   }
   @include media-query($widescreen) {
     margin-top: 300px;
@@ -123,5 +123,18 @@
     // text-transform: lowercase;
     // letter-spacing: -0.01em;
     margin: 0;
+  }
+}
+
+.tour__ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  ul {
+   margin: 8px;
+  }
+  a {
+    color: white;
   }
 }

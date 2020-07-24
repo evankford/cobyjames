@@ -54,6 +54,10 @@
               <div class="error hidden">Error Loading Dates</div>
             <div class="tour-dates-expand big hidden button accent blue" data-expand-bit><?php the_field('dates_expander');?></div>
           </div>
+          <div class="tour__ctas">
+            <?php get_template_part('template-parts/socials');?>
+            <?php get_template_part('template-parts/signup');?>
+          </div>
         </div>
     </div>
 </section>

@@ -52,7 +52,6 @@
       <div class="button-wrap"><a href="<?php echo get_field('button_url')['url'];?>" class="button big light" <?php if (get_field('button_url')['target'] == '_blank') { echo 'target="_blank" rel="nofollow noreferrer"';}?>><?php echo get_field('button_url')['title'];?></a></div>
     <?php }?>
     <nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cobyjames' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -62,6 +61,8 @@
       <?php if (get_field('stereo_image')) {
         imgwrap(get_field('stereo_image')['id'], false, '450w');
       }?>
+      <?php
+      get_template_part('template-parts/socials');?>
 		</nav><!-- #site-navigation -->
     <div class="email-signup">
         <div class="tour-mc"><link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
